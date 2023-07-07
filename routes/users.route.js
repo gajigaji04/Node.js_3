@@ -6,7 +6,7 @@ const { Transaction } = require("sequelize");
 const authMiddleware = require("../middlewares/auth-middleware");
 
 // 회원가입
-router.post("/users", async (req, res) => {
+router.post("/signup", async (req, res) => {
   const { email, password, name, age, gender, profileImage } = req.body;
   const isExistUser = await Users.findOne({ where: { email } });
 
