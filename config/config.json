@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "12341234",
-    "database": "sepuelize-transaction",
+    "database": "NodeJS",
     "host": "database-express.cwqm3oagxogc.ap-northeast-2.rds.amazonaws.com",
     "dialect": "mysql"
   },

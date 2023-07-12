@@ -2,7 +2,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Comments', {
+    await queryInterface.createTable('UserInfos', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -11,12 +11,6 @@ module.exports = {
       },
       UserId: {
         type: Sequelize.INTEGER
-      },
-      PostId: {
-        type: Sequelize.INTEGER
-      },
-      comment: {
-        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,
@@ -29,6 +23,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('Comments');
+    await queryInterface.dropTable('UserInfos');
   }
 };
